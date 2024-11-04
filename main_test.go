@@ -34,7 +34,7 @@ func TestMainHandlerWhenInvalidCity(t *testing.T) {
 
 }
 
-func TestMainHandlerWhenCountMore(t *testing.T) {
+func TestMainHandlerWhenCountMoreThanTotal(t *testing.T) {
 	req := httptest.NewRequest("GET", "/cafe?count=10&city=moscow", nil)
 
 	responseRecorder := httptest.NewRecorder()
